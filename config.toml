@@ -1,0 +1,19 @@
+# Example bfetch config file
+# Place this in ~/.config/bfetch/
+
+# modules = ["user_host", "shell", "distro", "packages", "uptime", "memory", "kernel", "ip", "cpu", "disk_usage", "process_num", "arch", "temp", "locale", "device_name", "time", "date"]
+modules = ["user_host", "shell", "distro" , "time" , "packages", "uptime", "memory", "kernel"]
+delimiter = "~>"
+title_color = "blue"
+
+[user_host]
+line = true
+line_symbol = "━"
+line_color = "magenta"
+
+[colors]
+enabled = true
+show_bg_colors = false
+
+[ip]
+public = false
