@@ -1,4 +1,4 @@
-use clap::{App, Arg};
+use clap::{crate_authors, crate_version, App, Arg};
 use std::path::Path;
 
 mod config;
@@ -7,8 +7,8 @@ mod stats;
 
 fn main() {
     let matches = App::new("bfetch")
-        .version("0.0.1")
-        .author("Bss Foundation")
+        .version(crate_version!())
+        .author(crate_authors!())
         .about("Fetch program for linux written in rust")
         .arg(
             Arg::with_name("config")
