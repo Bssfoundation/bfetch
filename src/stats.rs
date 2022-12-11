@@ -8,8 +8,7 @@ use std::path::PathBuf;
 use std::time::Duration;
 use std::{collections::HashMap, net::Ipv4Addr};
 
-// TODO:
-// Try to utilize async and multi-threading for better performance
+// TODO: Try to utilize async and multi-threading for better performance
 
 pub enum IpType {
     Public,
