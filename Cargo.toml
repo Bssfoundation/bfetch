@@ -1,19 +1,21 @@
 [package]
-name = "bfetch"
-version = "0.0.1"
 authors = ["Bss Foundation <bssinc@mail.ir>"]
+description = "Fetch program for linux written in rust"
 edition = "2021"
-
+name = "bfetch"
+readme = "README.md"
+version = "0.1.0"
+license="GPL3"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-clap = "2.33.3"
-toml = "0.5.8"
 bytesize = "1.0.1"
-nix = "0.20.0"
 chrono = "0.4.19"
-isolang = "1.0.0"
-humantime = "2.1.0"
-minreq = "2.3.1"
+clap = "2.33.3"
 colored = "2"
-serde = { version="1.0", features = ["derive"] }
+humantime = "2.1.0"
+isolang = "1.0.0"
+minreq = "2.3.1"
+nix = "0.20.0"
+serde = {version = "1.0", features = ["derive"]}
+toml = "0.5.8"
