@@ -16,6 +16,6 @@ colored = "2"
 humantime = "2.1.0"
 isolang = "2.2.0"
 minreq = "2.3.1"
-nix = "0.20.0"
+nix = "0.26.1"
 serde = {version = "1.0", features = ["derive"]}
 toml = "0.5.8"
