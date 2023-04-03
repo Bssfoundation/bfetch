@@ -11,7 +11,7 @@ license="GPL3"
 [dependencies]
 bytesize = "1.0.1"
 chrono = "0.4.19"
-clap = "2.33.3"
+clap = "4.2.1"
 colored = "2"
 humantime = "2.1.0"
 isolang = "2.2.0"
