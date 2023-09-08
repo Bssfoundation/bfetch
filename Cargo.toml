@@ -1,5 +1,5 @@
 [package]
-authors = ["Bss Foundation <bssinc@mail.ir>"]
+authors = ["Bss Foundation <bssopenfoundation@gmail.com>"]
 description = "Fetch program for linux written in rust"
 edition = "2021"
 name = "bfetch"

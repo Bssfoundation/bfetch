@@ -249,6 +249,13 @@ pub fn packages(distro: &str) -> Option<usize> {
                 .ok()?;
             Some(String::from_utf8_lossy(&output.stdout).split('\n').count())
         }
+        "Void Linux" => {
+            let output = std::process::Command::new("xbps-query")
+                .arg("-l")
+                .output()
+                .ok()?;
+            Some(String::from_utf8_lossy(&output.stdout).split('\n').count())
+        }
         "Gentoo" => {
             let mut count = 0;
             for entry in fs::read_dir("/var/db/pkg").ok()? {

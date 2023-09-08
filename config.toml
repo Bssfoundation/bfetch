@@ -13,7 +13,7 @@ line_color = "magenta"
 
 [colors]
 enabled = true
-show_bg_colors = false
+show_bg_colors = true
 
 [ip]
 public = false
