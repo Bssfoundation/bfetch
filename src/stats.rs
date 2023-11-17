@@ -249,9 +249,9 @@ pub fn packages(distro: &str) -> Option<usize> {
                 .ok()?;
             Some(String::from_utf8_lossy(&output.stdout).split('\n').count())
         }
-        "Void Linux" => {
-            let output = std::process::Command::new("xbps-query")
-                .arg("-l")
+        "Parch Linux" => {
+            let output = std::process::Command::new("pacman")
+                .arg("-Qq")
                 .output()
                 .ok()?;
             Some(String::from_utf8_lossy(&output.stdout).split('\n').count())
